@@ -4,6 +4,8 @@ El aplicación móvil  será desarrollada para usarse en un dispositivo que perm
 
 Los tickets de servicio son utilizados por los Universitarios para solicitar a los Bibliotecarios el servicio de referencia, es decir pedir apoyo para localizar información relevante para sustentar sus tareas, proyectos o trabajos de investigación.  Son atendidos por los Bibliotecarios y supervisados por los Responsables de las bibliotecas de la Universidad de Colima.
 
+# Integrantes
+
 1. Pizano Zeno-Sama
 2. Pablete
 3. Banda Oni-chan
