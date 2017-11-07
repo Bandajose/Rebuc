@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DD3FBE31FB1FA9000395305 /* UniverComentarTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */; };
+		5DD3FBEB1FB20AFD00395305 /* UniverPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3FBEA1FB20AFD00395305 /* UniverPerfilViewController.swift */; };
 		5DD80D871F98E70A00D1671C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80D861F98E70A00D1671C /* AppDelegate.swift */; };
 		5DD80D8C1F98E70A00D1671C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD80D8A1F98E70A00D1671C /* Main.storyboard */; };
 		5DD80D8E1F98E70A00D1671C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD80D8D1F98E70A00D1671C /* Assets.xcassets */; };
@@ -112,6 +113,7 @@
 
 /* Begin PBXFileReference section */
 		5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverComentarTicketsViewController.swift; sourceTree = "<group>"; };
+		5DD3FBEA1FB20AFD00395305 /* UniverPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverPerfilViewController.swift; sourceTree = "<group>"; };
 		5DD80D831F98E70A00D1671C /* ReBUC PRBSoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReBUC PRBSoft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD80D861F98E70A00D1671C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DD80D8B1F98E70A00D1671C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				5DFB6FBF1FA8CAB700DF9512 /* UniverCrearTicketsViewController.swift */,
 				5DD80D861F98E70A00D1671C /* AppDelegate.swift */,
 				5DD80D8A1F98E70A00D1671C /* Main.storyboard */,
+				5DD3FBEA1FB20AFD00395305 /* UniverPerfilViewController.swift */,
 				5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */,
 				5DFB6FC71FA8D76D00DF9512 /* UniverVerTicketsViewController.swift */,
 				5DD80DD51F98ECE800D1671C /* RegistroViewController.swift */,
@@ -436,6 +439,7 @@
 				5DFB6FC01FA8CAB800DF9512 /* UniverCrearTicketsViewController.swift in Sources */,
 				5DD80DD61F98ECE800D1671C /* RegistroViewController.swift in Sources */,
 				5DD80DD41F98E94900D1671C /* inicioDeSesionViewController.swift in Sources */,
+				5DD3FBEB1FB20AFD00395305 /* UniverPerfilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
