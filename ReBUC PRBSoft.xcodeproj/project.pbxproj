@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DD3FBE31FB1FA9000395305 /* UniverComentarTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */; };
+		5DD80D871F98E70A00D1671C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80D861F98E70A00D1671C /* AppDelegate.swift */; };
+		5DD80D8C1F98E70A00D1671C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD80D8A1F98E70A00D1671C /* Main.storyboard */; };
+		5DD80D8E1F98E70A00D1671C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD80D8D1F98E70A00D1671C /* Assets.xcassets */; };
+		5DD80D911F98E70A00D1671C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD80D8F1F98E70A00D1671C /* LaunchScreen.storyboard */; };
+		5DD80D9C1F98E70B00D1671C /* ReBUC_PRBSoftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80D9B1F98E70B00D1671C /* ReBUC_PRBSoftTests.swift */; };
+		5DD80DA71F98E70B00D1671C /* ReBUC_PRBSoftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80DA61F98E70B00D1671C /* ReBUC_PRBSoftUITests.swift */; };
+		5DD80DCD1F98E79A00D1671C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD80DBF1F98E76600D1671C /* SQLite.framework */; };
+		5DD80DCE1F98E7AE00D1671C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD80DBF1F98E76600D1671C /* SQLite.framework */; };
+		5DD80DCF1F98E7AE00D1671C /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD80DBF1F98E76600D1671C /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DD80DD41F98E94900D1671C /* inicioDeSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80DD31F98E94900D1671C /* inicioDeSesionViewController.swift */; };
+		5DD80DD61F98ECE800D1671C /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80DD51F98ECE800D1671C /* RegistroViewController.swift */; };
+		5DFB6FC01FA8CAB800DF9512 /* UniverCrearTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB6FBF1FA8CAB700DF9512 /* UniverCrearTicketsViewController.swift */; };
+		5DFB6FC81FA8D76D00DF9512 /* UniverVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB6FC71FA8D76D00DF9512 /* UniverVerTicketsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DD80D981F98E70B00D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80D7B1F98E70A00D1671C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DD80D821F98E70A00D1671C;
+			remoteInfo = "ReBUC PRBSoft";
+		};
+		5DD80DA31F98E70B00D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80D7B1F98E70A00D1671C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DD80D821F98E70A00D1671C;
+			remoteInfo = "ReBUC PRBSoft";
+		};
+		5DD80DBE1F98E76600D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		5DD80DC01F98E76600D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		5DD80DC21F98E76600D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		5DD80DC41F98E76600D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		5DD80DC61F98E76600D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		5DD80DC81F98E76600D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		5DD80DCA1F98E76600D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		5DD80DD01F98E7AE00D1671C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DD80DD21F98E7AE00D1671C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DD80DCF1F98E7AE00D1671C /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverComentarTicketsViewController.swift; sourceTree = "<group>"; };
+		5DD80D831F98E70A00D1671C /* ReBUC PRBSoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReBUC PRBSoft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD80D861F98E70A00D1671C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DD80D8B1F98E70A00D1671C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DD80D8D1F98E70A00D1671C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DD80D901F98E70A00D1671C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DD80D921F98E70A00D1671C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD80D971F98E70B00D1671C /* ReBUC PRBSoftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReBUC PRBSoftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD80D9B1F98E70B00D1671C /* ReBUC_PRBSoftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReBUC_PRBSoftTests.swift; sourceTree = "<group>"; };
+		5DD80D9D1F98E70B00D1671C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD80DA21F98E70B00D1671C /* ReBUC PRBSoftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReBUC PRBSoftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD80DA61F98E70B00D1671C /* ReBUC_PRBSoftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReBUC_PRBSoftUITests.swift; sourceTree = "<group>"; };
+		5DD80DA81F98E70B00D1671C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		5DD80DD31F98E94900D1671C /* inicioDeSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicioDeSesionViewController.swift; sourceTree = "<group>"; };
+		5DD80DD51F98ECE800D1671C /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		5DFB6FBF1FA8CAB700DF9512 /* UniverCrearTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverCrearTicketsViewController.swift; sourceTree = "<group>"; };
+		5DFB6FC71FA8D76D00DF9512 /* UniverVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverVerTicketsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DD80D801F98E70A00D1671C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD80DCE1F98E7AE00D1671C /* SQLite.framework in Frameworks */,
+				5DD80DCD1F98E79A00D1671C /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD80D941F98E70B00D1671C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD80D9F1F98E70B00D1671C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DD80D7A1F98E70A00D1671C = {
+			isa = PBXGroup;
+			children = (
+				5DD80D851F98E70A00D1671C /* ReBUC PRBSoft */,
+				5DD80D9A1F98E70B00D1671C /* ReBUC PRBSoftTests */,
+				5DD80DA51F98E70B00D1671C /* ReBUC PRBSoftUITests */,
+				5DD80D841F98E70A00D1671C /* Products */,
+				5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */,
+				5DD80DCC1F98E79A00D1671C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DD80D841F98E70A00D1671C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DD80D831F98E70A00D1671C /* ReBUC PRBSoft.app */,
+				5DD80D971F98E70B00D1671C /* ReBUC PRBSoftTests.xctest */,
+				5DD80DA21F98E70B00D1671C /* ReBUC PRBSoftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DD80D851F98E70A00D1671C /* ReBUC PRBSoft */ = {
+			isa = PBXGroup;
+			children = (
+				5DD80DD31F98E94900D1671C /* inicioDeSesionViewController.swift */,
+				5DFB6FBF1FA8CAB700DF9512 /* UniverCrearTicketsViewController.swift */,
+				5DD80D861F98E70A00D1671C /* AppDelegate.swift */,
+				5DD80D8A1F98E70A00D1671C /* Main.storyboard */,
+				5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */,
+				5DFB6FC71FA8D76D00DF9512 /* UniverVerTicketsViewController.swift */,
+				5DD80DD51F98ECE800D1671C /* RegistroViewController.swift */,
+				5DD80D8D1F98E70A00D1671C /* Assets.xcassets */,
+				5DD80D8F1F98E70A00D1671C /* LaunchScreen.storyboard */,
+				5DD80D921F98E70A00D1671C /* Info.plist */,
+			);
+			path = "ReBUC PRBSoft";
+			sourceTree = "<group>";
+		};
+		5DD80D9A1F98E70B00D1671C /* ReBUC PRBSoftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DD80D9B1F98E70B00D1671C /* ReBUC_PRBSoftTests.swift */,
+				5DD80D9D1F98E70B00D1671C /* Info.plist */,
+			);
+			path = "ReBUC PRBSoftTests";
+			sourceTree = "<group>";
+		};
+		5DD80DA51F98E70B00D1671C /* ReBUC PRBSoftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DD80DA61F98E70B00D1671C /* ReBUC_PRBSoftUITests.swift */,
+				5DD80DA81F98E70B00D1671C /* Info.plist */,
+			);
+			path = "ReBUC PRBSoftUITests";
+			sourceTree = "<group>";
+		};
+		5DD80DB51F98E76500D1671C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DD80DBF1F98E76600D1671C /* SQLite.framework */,
+				5DD80DC11F98E76600D1671C /* SQLiteTests iOS.xctest */,
+				5DD80DC31F98E76600D1671C /* SQLite.framework */,
+				5DD80DC51F98E76600D1671C /* SQLiteTests Mac.xctest */,
+				5DD80DC71F98E76600D1671C /* SQLite.framework */,
+				5DD80DC91F98E76600D1671C /* SQLiteTests tvOS.xctest */,
+				5DD80DCB1F98E76600D1671C /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DD80DCC1F98E79A00D1671C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DD80D821F98E70A00D1671C /* ReBUC PRBSoft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD80DAB1F98E70B00D1671C /* Build configuration list for PBXNativeTarget "ReBUC PRBSoft" */;
+			buildPhases = (
+				5DD80D7F1F98E70A00D1671C /* Sources */,
+				5DD80D801F98E70A00D1671C /* Frameworks */,
+				5DD80D811F98E70A00D1671C /* Resources */,
+				5DD80DD21F98E7AE00D1671C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DD80DD11F98E7AE00D1671C /* PBXTargetDependency */,
+			);
+			name = "ReBUC PRBSoft";
+			productName = "ReBUC PRBSoft";
+			productReference = 5DD80D831F98E70A00D1671C /* ReBUC PRBSoft.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DD80D961F98E70B00D1671C /* ReBUC PRBSoftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD80DAE1F98E70B00D1671C /* Build configuration list for PBXNativeTarget "ReBUC PRBSoftTests" */;
+			buildPhases = (
+				5DD80D931F98E70B00D1671C /* Sources */,
+				5DD80D941F98E70B00D1671C /* Frameworks */,
+				5DD80D951F98E70B00D1671C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DD80D991F98E70B00D1671C /* PBXTargetDependency */,
+			);
+			name = "ReBUC PRBSoftTests";
+			productName = "ReBUC PRBSoftTests";
+			productReference = 5DD80D971F98E70B00D1671C /* ReBUC PRBSoftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DD80DA11F98E70B00D1671C /* ReBUC PRBSoftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD80DB11F98E70B00D1671C /* Build configuration list for PBXNativeTarget "ReBUC PRBSoftUITests" */;
+			buildPhases = (
+				5DD80D9E1F98E70B00D1671C /* Sources */,
+				5DD80D9F1F98E70B00D1671C /* Frameworks */,
+				5DD80DA01F98E70B00D1671C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DD80DA41F98E70B00D1671C /* PBXTargetDependency */,
+			);
+			name = "ReBUC PRBSoftUITests";
+			productName = "ReBUC PRBSoftUITests";
+			productReference = 5DD80DA21F98E70B00D1671C /* ReBUC PRBSoftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DD80D7B1F98E70A00D1671C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = 7k;
+				TargetAttributes = {
+					5DD80D821F98E70A00D1671C = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					5DD80D961F98E70B00D1671C = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5DD80D821F98E70A00D1671C;
+					};
+					5DD80DA11F98E70B00D1671C = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5DD80D821F98E70A00D1671C;
+					};
+				};
+			};
+			buildConfigurationList = 5DD80D7E1F98E70A00D1671C /* Build configuration list for PBXProject "ReBUC PRBSoft" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DD80D7A1F98E70A00D1671C;
+			productRefGroup = 5DD80D841F98E70A00D1671C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5DD80DB51F98E76500D1671C /* Products */;
+					ProjectRef = 5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5DD80D821F98E70A00D1671C /* ReBUC PRBSoft */,
+				5DD80D961F98E70B00D1671C /* ReBUC PRBSoftTests */,
+				5DD80DA11F98E70B00D1671C /* ReBUC PRBSoftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5DD80DBF1F98E76600D1671C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 5DD80DBE1F98E76600D1671C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DD80DC11F98E76600D1671C /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 5DD80DC01F98E76600D1671C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DD80DC31F98E76600D1671C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 5DD80DC21F98E76600D1671C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DD80DC51F98E76600D1671C /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 5DD80DC41F98E76600D1671C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DD80DC71F98E76600D1671C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 5DD80DC61F98E76600D1671C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DD80DC91F98E76600D1671C /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 5DD80DC81F98E76600D1671C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DD80DCB1F98E76600D1671C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 5DD80DCA1F98E76600D1671C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DD80D811F98E70A00D1671C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD80D911F98E70A00D1671C /* LaunchScreen.storyboard in Resources */,
+				5DD80D8E1F98E70A00D1671C /* Assets.xcassets in Resources */,
+				5DD80D8C1F98E70A00D1671C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD80D951F98E70B00D1671C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD80DA01F98E70B00D1671C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DD80D7F1F98E70A00D1671C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFB6FC81FA8D76D00DF9512 /* UniverVerTicketsViewController.swift in Sources */,
+				5DD80D871F98E70A00D1671C /* AppDelegate.swift in Sources */,
+				5DD3FBE31FB1FA9000395305 /* UniverComentarTicketsViewController.swift in Sources */,
+				5DFB6FC01FA8CAB800DF9512 /* UniverCrearTicketsViewController.swift in Sources */,
+				5DD80DD61F98ECE800D1671C /* RegistroViewController.swift in Sources */,
+				5DD80DD41F98E94900D1671C /* inicioDeSesionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD80D931F98E70B00D1671C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD80D9C1F98E70B00D1671C /* ReBUC_PRBSoftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD80D9E1F98E70B00D1671C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD80DA71F98E70B00D1671C /* ReBUC_PRBSoftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DD80D991F98E70B00D1671C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DD80D821F98E70A00D1671C /* ReBUC PRBSoft */;
+			targetProxy = 5DD80D981F98E70B00D1671C /* PBXContainerItemProxy */;
+		};
+		5DD80DA41F98E70B00D1671C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DD80D821F98E70A00D1671C /* ReBUC PRBSoft */;
+			targetProxy = 5DD80DA31F98E70B00D1671C /* PBXContainerItemProxy */;
+		};
+		5DD80DD11F98E7AE00D1671C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 5DD80DD01F98E7AE00D1671C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DD80D8A1F98E70A00D1671C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DD80D8B1F98E70A00D1671C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DD80D8F1F98E70A00D1671C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DD80D901F98E70A00D1671C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DD80DA91F98E70B00D1671C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DD80DAA1F98E70B00D1671C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DD80DAC1F98E70B00D1671C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReBUC PRBSoft/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "p.ReBUC-PRBSoft";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DD80DAD1F98E70B00D1671C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReBUC PRBSoft/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "p.ReBUC-PRBSoft";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DD80DAF1F98E70B00D1671C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReBUC PRBSoftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "p.ReBUC-PRBSoftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReBUC PRBSoft.app/ReBUC PRBSoft";
+			};
+			name = Debug;
+		};
+		5DD80DB01F98E70B00D1671C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReBUC PRBSoftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "p.ReBUC-PRBSoftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReBUC PRBSoft.app/ReBUC PRBSoft";
+			};
+			name = Release;
+		};
+		5DD80DB21F98E70B00D1671C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReBUC PRBSoftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "p.ReBUC-PRBSoftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReBUC PRBSoft";
+			};
+			name = Debug;
+		};
+		5DD80DB31F98E70B00D1671C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ReBUC PRBSoftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "p.ReBUC-PRBSoftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReBUC PRBSoft";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DD80D7E1F98E70A00D1671C /* Build configuration list for PBXProject "ReBUC PRBSoft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD80DA91F98E70B00D1671C /* Debug */,
+				5DD80DAA1F98E70B00D1671C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD80DAB1F98E70B00D1671C /* Build configuration list for PBXNativeTarget "ReBUC PRBSoft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD80DAC1F98E70B00D1671C /* Debug */,
+				5DD80DAD1F98E70B00D1671C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD80DAE1F98E70B00D1671C /* Build configuration list for PBXNativeTarget "ReBUC PRBSoftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD80DAF1F98E70B00D1671C /* Debug */,
+				5DD80DB01F98E70B00D1671C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD80DB11F98E70B00D1671C /* Build configuration list for PBXNativeTarget "ReBUC PRBSoftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DD80DB21F98E70B00D1671C /* Debug */,
+				5DD80DB31F98E70B00D1671C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DD80D7B1F98E70A00D1671C /* Project object */;
+}
