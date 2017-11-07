@@ -123,7 +123,28 @@ class UniverComentarTicketsViewController: UIViewController, UITableViewDataSour
         formatter.dateFormat = "yyyy-MM-dd"
         fechaActual = formatter.string(from: date)
         
-        
+        // Guardar el ticket
+        let registrarRespuesta = self.historialTicketsTabla.insert(self.idTicketExp <- self.idTicket!, self.idRespuestaUsuarioExp <- self.idUsuario!, self.fechaRespuestaExp <- self.fechaActual!, self.respuestaExp <- self.preguntaTextField.text!)
+        do {
+            try self.database.run(registrarRespuesta)
+            print("Respuesta registrada con fecha \(self.fechaActual!) y pregunta: \(self.preguntaTextField.text!) del usuario \(self.idUsuario!)")
+            // Ejecutar un alert
+            let alert = UIAlertController(title: "Éxito!", message: "Pregunta guardada correctamente", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default) { (_) in
+            }
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+            
+            // Reiniciar text field
+            self.preguntaTextField.text = ""
+            
+            // Reiniciar tabla
+            obtenerComentarios()
+            self.respuestasTableView.reloadData()
+            
+        } catch {
+            print(error)
+        }
     }
 
     override func didReceiveMemoryWarning() {

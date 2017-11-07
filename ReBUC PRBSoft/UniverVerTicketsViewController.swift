@@ -97,6 +97,19 @@ class UniverVerTicketsViewController: UIViewController, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Seleccionaste el ticket numero \(idTickets[indexPath.row])")
+        self.idTicket = idTickets[indexPath.row]
+        self.descripcion = consultas[indexPath.row]
+        self.performSegue(withIdentifier: "universitarioTicketSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "universitarioTicketSegue" {
+            let vc : UniverComentarTicketsViewController = segue.destination as! UniverComentarTicketsViewController
+            vc.idUsuario = self.idUsuario
+            vc.idTicket = self.idTicket
+            vc.descripcion = self.descripcion
+        }
     }
     
     
