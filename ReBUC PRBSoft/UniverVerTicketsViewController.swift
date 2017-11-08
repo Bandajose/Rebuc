@@ -1,11 +1,11 @@
-//
+﻿//
 //  UniverVerTicketsViewController.swift
 //  ReBUC PRBSoft
 //
 //  Created by 7k on 31/10/17.
 //  Copyright © 2017 7k. All rights reserved.
 //
-
+// modificaciòn en git
 import UIKit
 import SQLite
 
