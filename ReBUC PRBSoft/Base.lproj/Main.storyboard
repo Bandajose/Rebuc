@@ -120,6 +120,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="RZl-nS-z6u" id="sgF-Sh-LnU"/>
+                                    <outlet property="delegate" destination="RZl-nS-z6u" id="pxy-ft-eND"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -188,8 +192,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="FAG-F1-hvd" id="K9x-9U-4Ry"/>
-                                    <outlet property="delegate" destination="FAG-F1-hvd" id="4uN-YC-ebK"/>
+                                    <outlet property="dataSource" destination="FAG-F1-hvd" id="zab-WG-XFo"/>
+                                    <outlet property="delegate" destination="FAG-F1-hvd" id="lwM-Y2-Pry"/>
                                 </connections>
                             </tableView>
                         </subviews>
