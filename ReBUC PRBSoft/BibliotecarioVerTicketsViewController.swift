@@ -156,7 +156,7 @@ class BibliotecarioVerTicketsViewController: UIViewController, UITableViewDataSo
     
     override func prepare(for segue:UIStoryboardSegue,sender:Any?){
         if segue.identifier == "bibliotecarioTicketSegue"{
-            let vc:BibliotecarioResponderTicketsViewController = segue.destination as! BibliotecarioResponderTicketsViewController
+            let vc:BibliotecarioResponderTicketViewController = segue.destination as! BibliotecarioResponderTicketViewController
             vc.idUsuario = self.idUsuario
             vc.idTicket = self.idTicket
             vc.descripcion = self.descripcion

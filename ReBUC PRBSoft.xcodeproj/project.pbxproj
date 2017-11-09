@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DD0FAB71FB4A45400638112 /* BibliotecarioVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0FAB61FB4A45400638112 /* BibliotecarioVerTicketsViewController.swift */; };
+		5DD0FABF1FB4B44000638112 /* BibliotecarioResponderTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0FABE1FB4B44000638112 /* BibliotecarioResponderTicketViewController.swift */; };
 		5DD3FBE31FB1FA9000395305 /* UniverComentarTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */; };
 		5DD3FBEB1FB20AFD00395305 /* UniverPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3FBEA1FB20AFD00395305 /* UniverPerfilViewController.swift */; };
 		5DD80D871F98E70A00D1671C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80D861F98E70A00D1671C /* AppDelegate.swift */; };
@@ -114,6 +115,7 @@
 
 /* Begin PBXFileReference section */
 		5DD0FAB61FB4A45400638112 /* BibliotecarioVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecarioVerTicketsViewController.swift; sourceTree = "<group>"; };
+		5DD0FABE1FB4B44000638112 /* BibliotecarioResponderTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecarioResponderTicketViewController.swift; sourceTree = "<group>"; };
 		5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverComentarTicketsViewController.swift; sourceTree = "<group>"; };
 		5DD3FBEA1FB20AFD00395305 /* UniverPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverPerfilViewController.swift; sourceTree = "<group>"; };
 		5DD80D831F98E70A00D1671C /* ReBUC PRBSoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReBUC PRBSoft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,7 @@
 				5DFB6FBF1FA8CAB700DF9512 /* UniverCrearTicketsViewController.swift */,
 				5DD80D861F98E70A00D1671C /* AppDelegate.swift */,
 				5DD80D8A1F98E70A00D1671C /* Main.storyboard */,
+				5DD0FABE1FB4B44000638112 /* BibliotecarioResponderTicketViewController.swift */,
 				5DD3FBEA1FB20AFD00395305 /* UniverPerfilViewController.swift */,
 				5DD3FBE21FB1FA9000395305 /* UniverComentarTicketsViewController.swift */,
 				5DFB6FC71FA8D76D00DF9512 /* UniverVerTicketsViewController.swift */,
@@ -437,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DFB6FC81FA8D76D00DF9512 /* UniverVerTicketsViewController.swift in Sources */,
+				5DD0FABF1FB4B44000638112 /* BibliotecarioResponderTicketViewController.swift in Sources */,
 				5DD0FAB71FB4A45400638112 /* BibliotecarioVerTicketsViewController.swift in Sources */,
 				5DD80D871F98E70A00D1671C /* AppDelegate.swift in Sources */,
 				5DD3FBE31FB1FA9000395305 /* UniverComentarTicketsViewController.swift in Sources */,
