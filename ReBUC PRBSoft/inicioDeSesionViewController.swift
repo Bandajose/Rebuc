@@ -90,6 +90,10 @@ class inicioDeSesionViewController: UIViewController {
                 self.performSegue(withIdentifier: "universitarioSegue", sender: self)
                 
             }
+            if idTipoUsuario == 2 {
+                self.performSegue(withIdentifier: "bibliotecarioSegue", sender: self)
+                
+            }
         }else {
             print("Error en los datos")
             //ejecutar un alert
@@ -111,6 +115,10 @@ class inicioDeSesionViewController: UIViewController {
         if segue.identifier == "universitarioSegue"{
             
         }
+        if segue.identifier == "bibliotecarioSegue"{
+            
+        }
+        
     }
 
     /*
