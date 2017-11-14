@@ -9,8 +9,8 @@ Los tickets de servicio son utilizados por los Universitarios para solicitar a l
 
 1. Pizano Sucedo
 2. Ramirez Urcino
-3. Banda Espidola
-
+3. Banda Espindola
+4. Hola Banda
 
 fecha de entrega: 25/11/2017
 
