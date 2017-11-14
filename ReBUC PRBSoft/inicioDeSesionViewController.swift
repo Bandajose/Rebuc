@@ -63,6 +63,15 @@ class inicioDeSesionViewController: UIViewController {
         if idUsuario != 0 {
             print("Sesion exitosa")
             //idUsuario = 0
+            //borramos tabla
+            
+            let eliminarTabla = self.sesionTabla.drop()
+            do{
+                try self.database.run(eliminarTabla)
+                print("Tabla borrada")
+            }catch{
+                print(error)
+            }
             //Crear la tabla de Usuarios
             
             let crearTabla = self.sesionTabla.create { (tabla) in
@@ -94,6 +103,10 @@ class inicioDeSesionViewController: UIViewController {
                 self.performSegue(withIdentifier: "bibliotecarioSegue", sender: self)
                 
             }
+            if idTipoUsuario == 3 {
+                self.performSegue(withIdentifier: "responsableSegue", sender: self)
+                
+            }
         }else {
             print("Error en los datos")
             //ejecutar un alert
@@ -116,6 +129,9 @@ class inicioDeSesionViewController: UIViewController {
             
         }
         if segue.identifier == "bibliotecarioSegue"{
+            
+        }
+        if segue.identifier == "responsableSegue"{
             
         }
         

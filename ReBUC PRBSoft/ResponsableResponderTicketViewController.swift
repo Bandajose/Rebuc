@@ -1,26 +1,27 @@
 //
-//  BibliotecarioResponderTicketViewController.swift
+//  ResponsableResponderTicketViewController.swift
 //  ReBUC PRBSoft
 //
-//  Created by 7k on 09/11/17.
+//  Created by 7k on 14/11/17.
 //  Copyright © 2017 7k. All rights reserved.
 //
 
 import UIKit
 import SQLite
 
-class BibliotecarioResponderTicketViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class ResponsableResponderTicketViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+    // Objeto que se utilizará
+    @IBOutlet var respuestasTableView: UITableView!
+    @IBOutlet var descripcionLabel: UILabel!
+    @IBOutlet var preguntaTextField: UITextField!
+    @IBOutlet var estatusPickerView: UIPickerView!
+    @IBOutlet var bibliotecariosPickerView: UIPickerView!
     
-    //Objeto que se utilizara
-    @IBOutlet var respuestasTableView:UITableView!
-    @IBOutlet var descripcionLabel:UILabel!
-    @IBOutlet var preguntaTextField:UITextField!
-    @IBOutlet var estatusPickerView:UIPickerView!
-    
-    // Tabla de tickets
-    let ticketsTabla = Table("tickets")
+    // Tabla de Tickets
+    let ticketsTabla = Table("Tickets")
     let idTicketExp = Expression<Int>("id_ticket")
     let estatusExp = Expression<String>("estatus")
+    let idUsuarioBibliotecarioExp = Expression<Int>("id_usuario_bibliotecario")
     
     // Tabla de respuestas de tickets
     var database: Connection!
@@ -30,22 +31,30 @@ class BibliotecarioResponderTicketViewController: UIViewController, UITableViewD
     let fechaRespuestaExp = Expression<String>("fecha_respuesta")
     let respuestaExp = Expression<String>("respuesta")
     
-    //variables a utilizar
+    // Propiedades de la base de datos
+    let usuariosTabla = Table("Usuarios")
+    let idUsuarioExp = Expression<Int>("id_usuario")
+    let nombreUsuarioExp = Expression<String>("nombre_usuario")
+    let apellidoUsuarioExp = Expression<String>("apellido_usuario")
+    let idTipoUsuarioExp = Expression<Int>("id_tipo_usuario")
     
-    var pickerData : [String] = ["En proceso", "Cerrado"]
+    // Variables a utilizar
+    var idBibliotecario : Int!
+    var idBibliotecarios: [Int] = []
+    var nombresBibliotecarios: [String] = []
+    var pickerData: [String] = ["Nuevo", "En proceso", "Cerrado"]
     var idUsuario : Int!
-    var idTicket : Int!
+    var idTicket :Int!
     var descripcion: String!
     var estatus: String!
-    var fechaActual: String!
+    var fechaActual : String!
     var respuestas = [String]()
     var fechas = [String]()
-   
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Obtener ruta del archivo
+
+        // Do any additional setup after loading the view.
         do {
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             let fileUrl = documentDirectory.appendingPathComponent("usuarios").appendingPathExtension("sqlite3")
@@ -54,20 +63,41 @@ class BibliotecarioResponderTicketViewController: UIViewController, UITableViewD
         }catch {
             print(error)
         }
-        
-        //Actualizar el valor de la etiqueta y el picker view
-        descripcionLabel.text = descripcion
-        if estatus != "En proceso" {
-            estatusPickerView.selectRow(1, inComponent:0, animated: true )
+        // Obtener los datos de los bibliotecarios y almacenarlos en arreglos
+        do {
+            let usuarios = self.usuariosTabla.filter(self.idTipoUsuarioExp == 2)
+            for usuario in try database.prepare(usuarios) {
+                self.idBibliotecarios.append(usuario[self.idUsuarioExp])
+                self.nombresBibliotecarios.append("\(usuario[self.nombreUsuarioExp]) \(usuario[self.apellidoUsuarioExp])")
+            }
+        } catch {
+            print(error)
         }
         
-        //convocar el método para obtener los comentarios de los tickets
+        // Actualizar el valor de la etiqueta y los picker views
+        descripcionLabel.text = descripcion
+        print("Estatus: \(estatus!)")
+        switch estatus {
+        case "Nuevo":
+            estatusPickerView.selectRow(0, inComponent: 0, animated: true)
+        case "En proceso":
+            estatusPickerView.selectRow(1, inComponent: 0, animated: true)
+        case "Cerrado":
+            estatusPickerView.selectRow(2, inComponent: 0, animated: true)
+        default :
+            estatusPickerView.selectRow(0, inComponent: 0, animated: true)
+        }
+        let indice = idBibliotecarios.index(of: idBibliotecario!)
+        print("Indice: \(indice!)")
+        bibliotecariosPickerView.selectRow(indice!, inComponent: 0, animated: true)
+        estatusPickerView.tag = 0
+        bibliotecariosPickerView.tag = 1
+        
+        
+        // Convocar al método para obtener los comentarios de los tickets
         obtenerComentarios()
-
-        // Do any additional setup after loading the view.
     }
     
-    // Método para obtener los comentarios de cada ticket y guardarlos en arreglos
     func obtenerComentarios() {
         respuestas.removeAll()
         fechas.removeAll()
@@ -81,8 +111,6 @@ class BibliotecarioResponderTicketViewController: UIViewController, UITableViewD
             print(error)
         }
     }
-    
-    // MARK: - Table view data source
     
     // MARK: - Table view data source
     
@@ -115,34 +143,55 @@ class BibliotecarioResponderTicketViewController: UIViewController, UITableViewD
         present(alert, animated: true, completion: nil)
     }
     
+    // MARK: - Picker view data source
+    // Número de columnas
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
+    // Número de filas de los datos
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return pickerData.count
+        if pickerView.tag == 0 {
+            return pickerData.count
+        } else {
+            return nombresBibliotecarios.count
+        }
+        
     }
     
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int,  forComponent component: Int) -> String? {
-        return pickerData[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let ticket = self.ticketsTabla.filter(self.idTicketExp == self.idTicket!)
-        let estatusActualizado = ticket.update(self.estatusExp <- pickerData[row])
-        do{
-            try self.database.run(estatusActualizado)
-            print("estatusActualizado")
-        }catch{
-            print(error)
+    // Datos que contendrá cada opción
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView.tag == 0 {
+            return pickerData[row]
+        } else {
+            return nombresBibliotecarios[row]
         }
     }
     
-    @IBAction func enviarRespuesta (_ sender:UIButton){
+    // Actualizar estatus del ticket
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let ticket = self.ticketsTabla.filter(self.idTicketExp == self.idTicket!)
+        if pickerView.tag == 0 {
+            let estatusActualizado = ticket.update(self.estatusExp <- pickerData[row])
+            do {
+                try self.database.run(estatusActualizado)
+                print("Estatus actualizado a \(pickerData[row])")
+            } catch {
+                print(error)
+            }
+        } else {
+            let bibliotecarioActualizado = ticket.update(self.idUsuarioBibliotecarioExp <- idBibliotecarios[row])
+            do {
+                try self.database.run(bibliotecarioActualizado)
+                print("Bibliotecario actualizado a \(idBibliotecarios[row])")
+            } catch {
+                print(error)
+            }
+        }
         
+    }
+    
+    @IBAction func enviarRespuesta(_ sender: UIButton) {
         // Crear la tabla de historial tickets
         let crearTabla = self.historialTicketsTabla.create { (tabla) in
             tabla.column(self.idHistorialTicketExp, primaryKey: true)
@@ -164,7 +213,7 @@ class BibliotecarioResponderTicketViewController: UIViewController, UITableViewD
         formatter.dateFormat = "yyyy-MM-dd"
         fechaActual = formatter.string(from: date)
         
-        // Guardar el ticket
+        // Guardar respuesta
         let registrarRespuesta = self.historialTicketsTabla.insert(self.idTicketExp <- self.idTicket!, self.idRespuestaUsuarioExp <- self.idUsuario!, self.fechaRespuestaExp <- self.fechaActual!, self.respuestaExp <- self.preguntaTextField.text!)
         do {
             try self.database.run(registrarRespuesta)
