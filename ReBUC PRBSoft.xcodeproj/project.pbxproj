@@ -26,6 +26,7 @@
 		5DD80DCF1F98E7AE00D1671C /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD80DBF1F98E76600D1671C /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DD80DD41F98E94900D1671C /* inicioDeSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80DD31F98E94900D1671C /* inicioDeSesionViewController.swift */; };
 		5DD80DD61F98ECE800D1671C /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD80DD51F98ECE800D1671C /* RegistroViewController.swift */; };
+		5DDF268B1FC474A3003B0178 /* administradorPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDF268A1FC474A3003B0178 /* administradorPerfilViewController.swift */; };
 		5DE7A1F41FBB2D5B002923F8 /* BibliotecarioPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE7A1F31FBB2D5B002923F8 /* BibliotecarioPerfilViewController.swift */; };
 		5DE7A1FC1FBB33D0002923F8 /* ResponsableVerTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE7A1FB1FBB33D0002923F8 /* ResponsableVerTicketsViewController.swift */; };
 		5DE7A1FE1FBB3A9F002923F8 /* ResponsableResponderTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE7A1FD1FBB3A9F002923F8 /* ResponsableResponderTicketViewController.swift */; };
@@ -145,6 +146,7 @@
 		5DD80DB41F98E76500D1671C /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		5DD80DD31F98E94900D1671C /* inicioDeSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicioDeSesionViewController.swift; sourceTree = "<group>"; };
 		5DD80DD51F98ECE800D1671C /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		5DDF268A1FC474A3003B0178 /* administradorPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = administradorPerfilViewController.swift; sourceTree = "<group>"; };
 		5DE7A1F31FBB2D5B002923F8 /* BibliotecarioPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecarioPerfilViewController.swift; sourceTree = "<group>"; };
 		5DE7A1FB1FBB33D0002923F8 /* ResponsableVerTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsableVerTicketsViewController.swift; sourceTree = "<group>"; };
 		5DE7A1FD1FBB3A9F002923F8 /* ResponsableResponderTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsableResponderTicketViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				5DFB6FBF1FA8CAB700DF9512 /* UniverCrearTicketsViewController.swift */,
 				5DD80D861F98E70A00D1671C /* AppDelegate.swift */,
 				5DD80D8A1F98E70A00D1671C /* Main.storyboard */,
+				5DDF268A1FC474A3003B0178 /* administradorPerfilViewController.swift */,
 				5D4589721FBDDB140079E3EA /* ResponsableUsuariosViewController.swift */,
 				5DE7A1FF1FBB4DE8002923F8 /* ResponsablePerfilViewController.swift */,
 				5DE7A1FD1FBB3A9F002923F8 /* ResponsableResponderTicketViewController.swift */,
@@ -467,6 +470,7 @@
 				5D4589811FBDECC00079E3EA /* AdministradorResponderTicketViewController.swift in Sources */,
 				5DE7A1F41FBB2D5B002923F8 /* BibliotecarioPerfilViewController.swift in Sources */,
 				5DD0FABF1FB4B44000638112 /* BibliotecarioResponderTicketViewController.swift in Sources */,
+				5DDF268B1FC474A3003B0178 /* administradorPerfilViewController.swift in Sources */,
 				5DD0FAB71FB4A45400638112 /* BibliotecarioVerTicketsViewController.swift in Sources */,
 				5D4589731FBDDB140079E3EA /* ResponsableUsuariosViewController.swift in Sources */,
 				5DE7A1FE1FBB3A9F002923F8 /* ResponsableResponderTicketViewController.swift in Sources */,

@@ -9,8 +9,7 @@
 import UIKit
 import SQLite
 
-class ResponsableUsuariosViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
-
+class ResponsableUsuariosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet var usuariosTableView: UITableView!
     
     // Propiedades de la tabla de usuarios
@@ -25,13 +24,13 @@ class ResponsableUsuariosViewController: UIViewController,UITableViewDataSource,
     var idUsuarios: [Int] = []
     var nombreUsuarios: [String] = []
     var idTipoUsuarios: [Int] = []
-    var tipoUsuariosData: [String] = ["Universitario", "Bibliotecario", "Responsable"]
+    var tipoUsuariosData: [String] = ["Universitario", "Bibliotecario", "Responsable", "Administrador"]
     var idUsuario: Int!
     var idTipoUsuario: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         // Obtener la ruta del archivo usuarios.sqlite3
         do {
@@ -43,13 +42,12 @@ class ResponsableUsuariosViewController: UIViewController,UITableViewDataSource,
             print(error)
         }
         
-        
         // Convocar al método para actualizar la tabla de usuarios
         actualizarUsuarios()
     }
+    
     func actualizarUsuarios() {
         // Limpiar los arreglos
-        
         self.idUsuarios.removeAll()
         self.nombreUsuarios.removeAll()
         self.idTipoUsuarios.removeAll()
@@ -148,23 +146,20 @@ class ResponsableUsuariosViewController: UIViewController,UITableViewDataSource,
         }
     }
     
-    
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

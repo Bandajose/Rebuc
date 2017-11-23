@@ -43,12 +43,6 @@ class AdministradorVerTicketsViewController: UIViewController, UITableViewDelega
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        // Do any additional setup after loading the view.
         // Obtener la ruta del archivo usuarios.sqlite3
         do {
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -81,6 +75,13 @@ class AdministradorVerTicketsViewController: UIViewController, UITableViewDelega
         } catch {
             print(error)
         }
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        // Do any additional setup after loading the view.
+        
     }
     
     // MARK: - Table view data source

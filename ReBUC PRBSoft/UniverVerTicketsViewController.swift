@@ -1,4 +1,4 @@
-﻿//
+//
 //  UniverVerTicketsViewController.swift
 //  ReBUC PRBSoft
 //
@@ -128,5 +128,31 @@ class UniverVerTicketsViewController: UIViewController, UITableViewDataSource, U
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Reiniciar datos
+       idTickets.removeAll()
+       consultas.removeAll()
+        estatus.removeAll()
+  
+        //obtener los datos de cada ticket y guardarlos en arreglos
+        
+        do {
+            let tickets = self.ticketsTabla.filter(self.idUsuarioExp == idUsuario! || self.idUsuarioExp == 0)
+            for ticket in try database.prepare(tickets){
+                self.idTickets.append(ticket[self.idTicketExp])
+                self.consultas.append(ticket[self.consultaExp])
+                 self.estatus.append(ticket[self.estatusExp])
+                
+            }
+            
+        }catch {
+            print(error)
+        }
+        
+        //recargar tabla
+        ticketsTableView.reloadData()
+        
+    }
 
 }
